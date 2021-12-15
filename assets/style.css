@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke !important;
+}
+
+/* Header Start */
+
+
+header nav {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid #000; */
+}
+
+nav .logo {
+    margin: auto 0;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav .char {
+    margin-top: auto 0;
+    font-size: 14px;
+}
+
+/* Header End */
+
+
+
+/* Admin Start */
+
+
+.Admin-date {
+    width: fit-content;
+    padding: 5px;
+    background-color: darkgray !important;
+    border-radius: 10px;
+}
+
+.Admin-date input {
+    border: none;
+    outline: none;
+    background-color: transparent !important;
+    padding: 0 10px;
+    color: #fff;
+}
+
+.Admin-date:hover , .Admin-date input:hover {
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.items .card {
+    margin: 10px 10px;
+    width: 250px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #fff !important;
+    box-shadow: 0px 0px 10px #0009;
+    border: none;
+}
+
+.items .card .card-body {
+    background-color: #fff !important;
+}
+
+.items .card .card-body h3 {
+    font-weight: bold;
+}
+
+.items .card .card-body h5, .card-body h3, .card-body p {
+    background-color: #fff !important;
+    box-shadow: 0px 0px 5px #000;
+    transition: all 0.3s ease;
+}
+
+.items .card .card-body h5:hover,
+.card-body h3:hover,
+.card-body p:hover {
+    margin: 0 10px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #0009 !important;
+    color: #fff;
+}
+
+/* Admin End */
+
+
+/* Responsive Start */
+@media only screen and (max-width: 991px) {
+    .items .card {
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .items .card {
+        width: 45%;
+    }
+
+    .items .card:last-child {
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 425px) {
+    .items .card {
+        width: 100%;
+    }
+}
+
+/* Responsive End */
