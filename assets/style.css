@@ -11,7 +11,6 @@ header nav {
     margin-top: 5px;
     display: flex;
     justify-content: space-between;
-    /* border: 1px solid #000; */
 }
 
 nav .logo {
@@ -23,6 +22,22 @@ nav .logo {
 nav .char {
     margin-top: auto 0;
     font-size: 14px;
+}
+
+nav .char .char-profile p span {
+    float: right !important;
+}
+
+nav .char .char-profile {
+    display: flex;
+
+}
+
+nav .char .char-profile img {
+    width: 30px;
+    height: 30px;
+    margin: 5px 0 0px 10px;
+    padding: 0;
 }
 
 /* Header End */
@@ -47,7 +62,7 @@ nav .char {
     color: #fff;
 }
 
-.Admin-date:hover , .Admin-date input:hover {
+.Admin-date:hover, .Admin-date input:hover {
     cursor: pointer;
     background-color: #fff;
 }
@@ -76,7 +91,7 @@ nav .char {
     font-weight: bold;
 }
 
-.items .card .card-body h5, .card-body h3, .card-body p {
+.items .card .card-body h5, .items .card .card-body h3, .items .card .card-body p {
     background-color: #fff !important;
     box-shadow: 0px 0px 5px #000;
     transition: all 0.3s ease;
@@ -84,7 +99,7 @@ nav .char {
 
 .items .card .card-body h5:hover,
 .card-body h3:hover,
-.card-body p:hover {
+.items .card.card-body p:hover {
     margin: 0 10px;
     text-align: center;
     cursor: pointer;
@@ -95,7 +110,65 @@ nav .char {
 /* Admin End */
 
 
+/* Update Start */
+
+
+.update p {
+    font-weight: bold;
+}
+
+.update .card {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #fff !important;
+    box-shadow: 0px 0px 10px #0009;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.update .card .card-body {
+    background-color: #fff !important;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.update .card .card-body img {
+    width: 30px;
+    height: 30px;
+    margin: auto 0;
+    align-items: center;
+}
+
+.update .card .card-body p {
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #fff !important;
+    margin: 10px;
+}
+
+
+/* Update End */
+
+
+
 /* Responsive Start */
+
+@media only screen and (max-width: 1199px) {
+    
+    .update .card {
+        width: 80%;
+        padding: 30px;
+    }
+    
+    .update .card .card-body {
+        justify-content: start;
+        padding: 3px 0;
+    }
+}
+
+
 @media only screen and (max-width: 991px) {
     .items .card {
         width: 200px;
@@ -108,6 +181,10 @@ nav .char {
     }
 
     .items .card:last-child {
+        width: 100%;
+    }
+
+    .update .card {
         width: 100%;
     }
 }
