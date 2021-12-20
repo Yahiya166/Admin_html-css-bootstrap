@@ -17,6 +17,7 @@ nav .logo {
     margin: auto 0;
     font-size: 25px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 nav .char {
@@ -38,6 +39,7 @@ nav .char .char-profile img {
     height: 30px;
     margin: 5px 0 0px 10px;
     padding: 0;
+    cursor: pointer;
 }
 
 /* Header End */
@@ -75,7 +77,7 @@ nav .char .char-profile img {
 
 .items .card {
     margin: 10px 10px;
-    width: 250px;
+    width: 300px;
     padding: 10px;
     border-radius: 20px;
     background-color: #fff !important;
@@ -98,8 +100,8 @@ nav .char .char-profile img {
 }
 
 .items .card .card-body h5:hover,
-.card-body h3:hover,
-.items .card.card-body p:hover {
+.items .card .card-body h3:hover,
+.items .card .card-body p:hover {
     margin: 0 10px;
     text-align: center;
     cursor: pointer;
@@ -146,6 +148,7 @@ nav .char .char-profile img {
     font-weight: 500;
     background-color: #fff !important;
     margin: 10px;
+    cursor: pointer;
 }
 
 
@@ -153,18 +156,115 @@ nav .char .char-profile img {
 
 
 
+/* Order Start */
+
+
+.order p {
+    font-weight: bold;
+}
+
+.order .tabb {
+    box-shadow: 0px 0px 5px #000;
+    border-radius: 20px;
+    padding: 10px 10px 2px 10px !important;
+    background-color: #fff !important;
+}
+
+.order .tabb table thead tr th, .order .tabb table tbody tr td {
+    background-color: #fff !important;
+}
+
+.order .tabb table tbody tr td a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: large;
+}
+
+.order .tabb table tbody tr td a:hover {
+    text-decoration: underline;
+    font-style: italic;
+}
+
+/* Order End */
+
+
+
+/* Sale Start */
+
+.sale-anal p {
+    font-weight: bold;
+}
+
+.sale-anal .cardd{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: #fff !important;
+    box-shadow: 0px 4px 10px #0009;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.sale-anal .cardd .img {
+    display: none;
+}
+
+.sale-anal .cardd .texxt, .texxt p {
+    font-size: 14px;
+    background-color: #fff !important;
+}
+
+.sale-anal .cardd .texxt p span {
+    font-size: 12px;
+    background-color: #fff !important;
+}
+
+.sale-anal .cardd .per, .cardd .price {
+    background-color: #fff !important;
+    font-weight: bold;
+}
+
+.sale-anal .cardd .per {
+    color: aqua;
+}
+
+/* Sale End */
+
+
 /* Responsive Start */
 
+@media only screen and (max-width: 1312px) {
+
+    .items .card {
+        width: 250px;
+    }
+}
+
+
 @media only screen and (max-width: 1199px) {
-    
+
+    .items .card {
+        width: 350px;
+    }
+
     .update .card {
-        width: 80%;
+        width: 100%;
         padding: 30px;
     }
-    
+
     .update .card .card-body {
         justify-content: start;
         padding: 3px 0;
+    }
+}
+
+@media only screen and (max-width: 1134px) {
+
+    .items .card {
+        width: 300px;
     }
 }
 
@@ -190,6 +290,16 @@ nav .char .char-profile img {
 }
 
 
+@media only screen and (max-width: 483px) {
+    .order .tabb {
+        width: 80%;
+        margin: auto;
+    }
+    
+    .order .tabb table {
+        width: 60%;
+    }
+}
 @media only screen and (max-width: 425px) {
     .items .card {
         width: 100%;
